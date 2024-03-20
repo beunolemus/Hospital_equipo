@@ -101,6 +101,7 @@ import RadiologiaI from "../views/RadiologiaImagen/radiologiaimagen.vue";
 import RecursosH from "../views/RecursosHumanos/recursoshumanos.vue";
 import RegistrosM from "../views/RegistrosMedicos/registrosmedicos.vue";
 import dashboardPQ from "../views/ProgramacionQuirurgica/dashboardPQ.vue";
+import calendariocirugias from "../views/ProgramacionQuirurgica/calendariocirugias.vue";
 
 const childRoutes = (prop, mode) => [
   {
@@ -162,6 +163,12 @@ const childRoutes = (prop, mode) => [
     name: prop + ".dashboardpq",
     meta: { dark: mode, auth: true, name: "DashBoard Programación Quirurgica" },
     component: dashboardPQ,
+  },
+  {
+    path: "calendariocirugias",
+    name: prop + ".calendariocirugias",
+    meta: { dark: mode, auth: true, name: "Calendario Cirugias" },
+    component: calendariocirugias,
   },
   {
     path: "radiologiai",

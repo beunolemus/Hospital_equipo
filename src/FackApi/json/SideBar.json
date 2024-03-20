@@ -75,6 +75,19 @@
     "badge" : false
   },
   {
+    "title": "Calendario Cirugias",
+    "name": "Calendario Cirugias",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "dashboard.calendariocirugias"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-home-8-fill",
+    "badge" : false
+  },
+  {
     "title": "Farmacia Intrahospitalaria",
     "name": "Farmacia Intrahospitalaria",
     "is_heading": false,
