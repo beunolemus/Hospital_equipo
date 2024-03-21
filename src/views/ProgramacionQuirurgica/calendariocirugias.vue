@@ -15,7 +15,7 @@
         </iq-card>
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Classification</h4>
+            <h4 class="card-title">Clasificación</h4>
           </template>
           <template v-slot:headerAction>
             <a href="#"><i class="fa fa-plus mr-0" aria-hidden="true" /></a>
@@ -35,7 +35,7 @@
         </iq-card>
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Today's Schedule</h4>
+            <h4 class="card-title">Citas para Hoy</h4>
           </template>
           <template v-slot:body>
             <ul class="m-0 p-0 today-schedule">
@@ -44,7 +44,7 @@
                   <i class="ri-checkbox-blank-circle-fill text-primary" />
                 </div>
                 <div class="schedule-text">
-                  <span>Web Design</span> <span>09:00 to 12:00</span>
+                  <span>Quirófano 1</span> <span>09:00 a 12:00</span>
                 </div>
               </li>
               <li class="d-flex">
@@ -52,7 +52,7 @@
                   <i class="ri-checkbox-blank-circle-fill text-success" />
                 </div>
                 <div class="schedule-text">
-                  <span>Participate in Design</span> <span>09:00 to 12:00</span>
+                  <span>Quirofano 2</span> <span>09:00 a 11-:00</span>
                 </div>
               </li>
             </ul>
@@ -62,11 +62,11 @@
       <b-col lg="9">
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Book Appointment</h4>
+            <h4 class="card-title">Calendario de Cirugías</h4>
           </template>
           <template v-slot:headerAction>
             <a href="#" class="btn btn-primary"
-              ><i class="ri-add-line mr-2"></i>Book Appointment</a
+              ><i class="ri-add-line mr-2"></i>CalendarioV2</a
             >
           </template>
           <template v-slot:body>
