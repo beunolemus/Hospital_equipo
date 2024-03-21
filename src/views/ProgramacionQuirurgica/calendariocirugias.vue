@@ -2,40 +2,24 @@
   <b-container fluid>
     <b-row>
       <b-col md="3">
-        <iq-card class="calender-small">
-          <template v-slot:body>
-            <!-- <FlatPicker config="config" value="" class="d-none" /> -->
-            <flat-picker
-              v-model="date"
-              className="d-none"
-              :config="inlineDatepicker"
-              placeholder="select Date"
-            ></flat-picker>
-          </template>
-        </iq-card>
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Classification</h4>
-          </template>
-          <template v-slot:headerAction>
-            <a href="#"><i class="fa fa-plus mr-0" aria-hidden="true" /></a>
+            <h4 class="card-title">Clasificación</h4>
           </template>
           <template v-slot:body>
             <ul class="m-0 p-0 job-classification">
-              <li class=""><i class="ri-check-line bg-danger" />Meeting</li>
               <li class="">
-                <i class="ri-check-line bg-success" />Business travel
+                <i class="ri-check-line bg-danger" />No disponible
               </li>
-              <li class="">
-                <i class="ri-check-line bg-warning" />Personal Work
-              </li>
-              <li class=""><i class="ri-check-line bg-info" />Team Project</li>
+              <li class=""><i class="ri-check-line bg-success" />Disponible</li>
+              <li class=""><i class="ri-check-line bg-warning" />Pendientes</li>
+              <li class=""><i class="ri-check-line bg-info" />Realizado</li>
             </ul>
           </template>
         </iq-card>
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Today's Schedule</h4>
+            <h4 class="card-title">Citas para Hoy</h4>
           </template>
           <template v-slot:body>
             <ul class="m-0 p-0 today-schedule">
@@ -44,7 +28,7 @@
                   <i class="ri-checkbox-blank-circle-fill text-primary" />
                 </div>
                 <div class="schedule-text">
-                  <span>Web Design</span> <span>09:00 to 12:00</span>
+                  <span>Quirófano 1</span> <span>09:00 a 12:00</span>
                 </div>
               </li>
               <li class="d-flex">
@@ -52,7 +36,7 @@
                   <i class="ri-checkbox-blank-circle-fill text-success" />
                 </div>
                 <div class="schedule-text">
-                  <span>Participate in Design</span> <span>09:00 to 12:00</span>
+                  <span>Quirofano 2</span> <span>09:00 a 11-:00</span>
                 </div>
               </li>
             </ul>
@@ -62,11 +46,12 @@
       <b-col lg="9">
         <iq-card>
           <template v-slot:headerTitle>
-            <h4 class="card-title">Book Appointment</h4>
+            <h4 class="card-title">Calendario de Cirugías</h4>
           </template>
+
           <template v-slot:headerAction>
-            <a href="#" class="btn btn-primary"
-              ><i class="ri-add-line mr-2"></i>Book Appointment</a
+            <a href="#" class="btn btn-primary" @click="mostrarModal">
+              <i class="ri-add-line mr-2"></i>Agendar Cita</a
             >
           </template>
           <template v-slot:body>
@@ -81,30 +66,26 @@
     </b-row>
   </b-container>
 </template>
+
 <script>
 import { ref } from "vue";
-
 //import iqCard from '../../../../../components/xray/cards/iq-card'
 import iqCard from "./calendario/iq-card.vue";
-
 //import { xray } from '../../../../../config/pluginInit'
 import { xray } from "./calendario/pluginInit.js";
 // Library Components
-
-import FlatPicker from "vue-flatpickr-component";
-
 // import FullCalendar from '@fullcalendar/vue3'
 // import FullCalendar from '../../../../../components/xray/calendar/FullCalendar.vue'
 import FullCalendar from "./calendario/FullCalendar.vue";
-
 import moment from "moment";
+
 export default {
   name: "GoogleCalendar",
-  components: { iqCard, FlatPicker, FullCalendar },
+  components: { iqCard, FullCalendar },
   data() {
     const events = ref([
       {
-        title: "Click for Google",
+        title: "Incluyendo link",
         url: "http://google.com/",
         start:
           moment(new Date(), "YYYY-MM-DD")
@@ -115,7 +96,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Long Event",
+        title: "Disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-18, "days")
@@ -123,7 +104,7 @@ export default {
         color: "green",
       },
       {
-        title: "Long Event",
+        title: "Dias libres",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-16, "days")
@@ -138,7 +119,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Citas por confirmar",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-14, "days")
@@ -150,7 +131,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-12, "days")
@@ -161,7 +142,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-10, "days")
@@ -171,7 +152,7 @@ export default {
         borderColor: "rgba(206,32,20,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-8, "days")
@@ -181,7 +162,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Meeting",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-6, "days")
@@ -191,7 +172,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-5, "days")
@@ -201,7 +182,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-2, "days")
@@ -210,9 +191,8 @@ export default {
         textColor: "rgba(235,153,27,1)",
         borderColor: "rgba(235,153,27,1)",
       },
-
       {
-        title: "Meeting",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -221,7 +201,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Click for Google",
+        title: "Incluyendo link",
         url: "http://google.com/",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
@@ -232,7 +212,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "No se",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T07:30:00.000Z",
@@ -250,7 +230,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "Doctor Meeting",
+        title: "comprimido",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -259,7 +239,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "All Day Event",
+        title: "Todo dia ocupado",
         start:
           moment(new Date(), "YYYY-MM-DD").add(1, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -269,21 +249,10 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Reprogramación de cirugia",
         start:
           moment(new Date(), "YYYY-MM-DD").add(8, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
-        backgroundColor: "rgba(58,87,232,0.2)",
-        textColor: "rgba(58,87,232,1)",
-        borderColor: "rgba(58,87,232,1)",
-      },
-      {
-        groupId: "999",
-        title: "Repeating Event",
-        start:
-          moment(new Date(), "YYYY-MM-DD")
-            .add(10, "days")
-            .format("YYYY-MM-DD") + "T05:30:00.000Z",
         backgroundColor: "rgba(58,87,232,0.2)",
         textColor: "rgba(58,87,232,1)",
         borderColor: "rgba(58,87,232,1)",
