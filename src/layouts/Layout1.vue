@@ -160,6 +160,7 @@
               </li>
             </ul>
           </template>
+          <!-- ----------------------------------------------------- -->
           <template v-slot:right>
             <ul class="navbar-list">
               <li>
@@ -275,6 +276,8 @@
               </li>
             </ul>
           </template>
+          <!-- -----------------------------------------------------
+ -->
         </NavBarStyle1>
         <!-- TOP Nav Bar END -->
         <router-view />

@@ -2,23 +2,9 @@
   <b-container fluid>
     <b-row>
       <b-col md="3">
-        <iq-card class="calender-small">
-          <template v-slot:body>
-            <!-- <FlatPicker config="config" value="" class="d-none" /> -->
-            <flat-picker
-              v-model="date"
-              className="d-none"
-              :config="inlineDatepicker"
-              placeholder="select Date"
-            ></flat-picker>
-          </template>
-        </iq-card>
         <iq-card>
           <template v-slot:headerTitle>
             <h4 class="card-title">Clasificación</h4>
-          </template>
-          <template v-slot:headerAction>
-            <a href="#"><i class="fa fa-plus mr-0" aria-hidden="true" /></a>
           </template>
           <template v-slot:body>
             <ul class="m-0 p-0 job-classification">
@@ -62,11 +48,16 @@
           <template v-slot:headerTitle>
             <h4 class="card-title">Calendario de Cirugías</h4>
           </template>
+
           <template v-slot:headerAction>
             <a href="#" class="btn btn-primary"
               ><i class="ri-add-line mr-2"></i>CalendarioV2</a
             >
           </template>
+          <!------------------------------------------------------ -->
+          <template> </template>
+          <!--  ----------------------------------------------------- -->
+
           <template v-slot:body>
             <FullCalendar
               :events="events"
@@ -79,25 +70,22 @@
     </b-row>
   </b-container>
 </template>
+
 <script>
 import { ref } from "vue";
-
 //import iqCard from '../../../../../components/xray/cards/iq-card'
 import iqCard from "./calendario/iq-card.vue";
-
 //import { xray } from '../../../../../config/pluginInit'
 import { xray } from "./calendario/pluginInit.js";
 // Library Components
-
-import FlatPicker from "vue-flatpickr-component";
 // import FullCalendar from '@fullcalendar/vue3'
 // import FullCalendar from '../../../../../components/xray/calendar/FullCalendar.vue'
 import FullCalendar from "./calendario/FullCalendar.vue";
-
 import moment from "moment";
+
 export default {
   name: "GoogleCalendar",
-  components: { iqCard, FlatPicker, FullCalendar },
+  components: { iqCard, FullCalendar },
   data() {
     const events = ref([
       {
