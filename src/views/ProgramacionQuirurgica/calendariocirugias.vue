@@ -22,14 +22,12 @@
           </template>
           <template v-slot:body>
             <ul class="m-0 p-0 job-classification">
-              <li class=""><i class="ri-check-line bg-danger" />Meeting</li>
               <li class="">
-                <i class="ri-check-line bg-success" />Business travel
+                <i class="ri-check-line bg-danger" />No disponible
               </li>
-              <li class="">
-                <i class="ri-check-line bg-warning" />Personal Work
-              </li>
-              <li class=""><i class="ri-check-line bg-info" />Team Project</li>
+              <li class=""><i class="ri-check-line bg-success" />Disponible</li>
+              <li class=""><i class="ri-check-line bg-warning" />Pendientes</li>
+              <li class=""><i class="ri-check-line bg-info" />Realizado</li>
             </ul>
           </template>
         </iq-card>
@@ -92,7 +90,6 @@ import { xray } from "./calendario/pluginInit.js";
 // Library Components
 
 import FlatPicker from "vue-flatpickr-component";
-
 // import FullCalendar from '@fullcalendar/vue3'
 // import FullCalendar from '../../../../../components/xray/calendar/FullCalendar.vue'
 import FullCalendar from "./calendario/FullCalendar.vue";
@@ -104,7 +101,7 @@ export default {
   data() {
     const events = ref([
       {
-        title: "Click for Google",
+        title: "Incluyendo link",
         url: "http://google.com/",
         start:
           moment(new Date(), "YYYY-MM-DD")
@@ -115,7 +112,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Long Event",
+        title: "Disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-18, "days")
@@ -123,7 +120,7 @@ export default {
         color: "green",
       },
       {
-        title: "Long Event",
+        title: "Dias libres",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-16, "days")
@@ -138,7 +135,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Citas por confirmar",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-14, "days")
@@ -150,7 +147,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-12, "days")
@@ -161,7 +158,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-10, "days")
@@ -171,7 +168,7 @@ export default {
         borderColor: "rgba(206,32,20,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-8, "days")
@@ -181,7 +178,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Meeting",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-6, "days")
@@ -191,7 +188,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-5, "days")
@@ -201,7 +198,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "Birthday Party",
+        title: "Exitoso",
         start:
           moment(new Date(), "YYYY-MM-DD")
             .add(-2, "days")
@@ -210,9 +207,8 @@ export default {
         textColor: "rgba(235,153,27,1)",
         borderColor: "rgba(235,153,27,1)",
       },
-
       {
-        title: "Meeting",
+        title: "No disponible",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -221,7 +217,7 @@ export default {
         borderColor: "rgba(58,87,232,1)",
       },
       {
-        title: "Click for Google",
+        title: "Incluyendo link",
         url: "http://google.com/",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
@@ -232,7 +228,7 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "No se",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T07:30:00.000Z",
@@ -250,7 +246,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "Doctor Meeting",
+        title: "comprimido",
         start:
           moment(new Date(), "YYYY-MM-DD").add(0, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -259,7 +255,7 @@ export default {
         borderColor: "rgba(235,153,27,1)",
       },
       {
-        title: "All Day Event",
+        title: "Todo dia ocupado",
         start:
           moment(new Date(), "YYYY-MM-DD").add(1, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
@@ -269,21 +265,10 @@ export default {
       },
       {
         groupId: "999",
-        title: "Repeating Event",
+        title: "Reprogramación de cirugia",
         start:
           moment(new Date(), "YYYY-MM-DD").add(8, "days").format("YYYY-MM-DD") +
           "T05:30:00.000Z",
-        backgroundColor: "rgba(58,87,232,0.2)",
-        textColor: "rgba(58,87,232,1)",
-        borderColor: "rgba(58,87,232,1)",
-      },
-      {
-        groupId: "999",
-        title: "Repeating Event",
-        start:
-          moment(new Date(), "YYYY-MM-DD")
-            .add(10, "days")
-            .format("YYYY-MM-DD") + "T05:30:00.000Z",
         backgroundColor: "rgba(58,87,232,0.2)",
         textColor: "rgba(58,87,232,1)",
         borderColor: "rgba(58,87,232,1)",
