@@ -50,14 +50,10 @@
           </template>
 
           <template v-slot:headerAction>
-            <a href="#" class="btn btn-primary"
-              ><i class="ri-add-line mr-2"></i>CalendarioV2</a
+            <a href="#" class="btn btn-primary" @click="mostrarModal">
+              <i class="ri-add-line mr-2"></i>Agendar Cita</a
             >
           </template>
-          <!------------------------------------------------------ -->
-          <template> </template>
-          <!--  ----------------------------------------------------- -->
-
           <template v-slot:body>
             <FullCalendar
               :events="events"
