@@ -42,6 +42,153 @@
             </ul>
           </template>
         </iq-card>
+        <!--  historial de cirugias -->
+        <iq-card>
+          <template v-slot:headerTitle>
+            <h4 class="card-title">Historial de Cirugias</h4>
+          </template>
+          <template v-slot:body>
+            <ul class="m-0 p-0 today-schedule">
+              <li class="d-flex">
+                <div class="schedule-icon">
+                  <i class="ri-checkbox-blank-circle-fill text-success" />
+                </div>
+                <div class="schedule-text">
+                  <!---------------------------------  incrustacion de modal -------------------------------->
+                  <b-button v-b-modal.modal-7 variant="link" class="mb-3 me-1">
+                    <span>Quirofano 1</span>
+                    <span>14 de Marzo</span>
+                  </b-button>
+                  <b-modal
+                    id="modal-7"
+                    centered
+                    title="Informacion del historial de cirugia"
+                  >
+                    <h2>Historial de Cirugía</h2>
+                    <h3>Paciente: [Nombre del paciente]</h3>
+                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
+                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
+                    <p>Médico a cargo: [Nombre del médico principal]</p>
+                    <p>
+                      Equipo médico: [Lista de nombres del equipo médico
+                      involucrado]
+                    </p>
+                    <p>
+                      Descripción de la cirugía: [Breve descripción del
+                      procedimiento realizado]
+                    </p>
+                    <p>
+                      Complicaciones durante la cirugía: [Si corresponde,
+                      descripción de cualquier complicación ocurrida durante la
+                      cirugía]
+                    </p>
+                    <p>
+                      Resultado de la cirugía: [Estado del paciente después de
+                      la cirugía, por ejemplo, estable, en recuperación, alta
+                      médica, etc.]
+                    </p>
+                    <p>
+                      Observaciones: [Cualquier observación adicional relevante
+                      sobre la cirugía]
+                    </p>
+                  </b-modal>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="schedule-icon">
+                  <i class="ri-checkbox-blank-circle-fill text-success" />
+                </div>
+                <div class="schedule-text">
+                  <!---------------------------------  incrustacion de modal -------------------------------->
+                  <b-button v-b-modal.modal-7 variant="link" class="mb-3 me-1">
+                    <span>Quirofano 2</span>
+                    <span>16 de Marzo</span>
+                  </b-button>
+                  <b-modal
+                    id="modal-7"
+                    centered
+                    title="Informacion del historial de cirugia"
+                  >
+                    <h2>Historial de Cirugía</h2>
+                    <h3>Paciente: [Nombre del paciente]</h3>
+                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
+                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
+                    <p>Médico a cargo: [Nombre del médico principal]</p>
+                    <p>
+                      Equipo médico: [Lista de nombres del equipo médico
+                      involucrado]
+                    </p>
+                    <p>
+                      Descripción de la cirugía: [Breve descripción del
+                      procedimiento realizado]
+                    </p>
+                    <p>
+                      Complicaciones durante la cirugía: [Si corresponde,
+                      descripción de cualquier complicación ocurrida durante la
+                      cirugía]
+                    </p>
+                    <p>
+                      Resultado de la cirugía: [Estado del paciente después de
+                      la cirugía, por ejemplo, estable, en recuperación, alta
+                      médica, etc.]
+                    </p>
+                    <p>
+                      Observaciones: [Cualquier observación adicional relevante
+                      sobre la cirugía]
+                    </p>
+                  </b-modal>
+                  <!---------------------------------  incrustacion de modal -------------------------------->
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="schedule-icon">
+                  <i class="ri-checkbox-blank-circle-fill text-success" />
+                </div>
+                <div class="schedule-text">
+                  <!---------------------------------  incrustacion de modal -------------------------------->
+                  <b-button v-b-modal.modal-7 variant="link" class="mb-3 me-1">
+                    <span>Quirofano 3</span>
+                    <span>22 de Marzo</span>
+                  </b-button>
+                  <b-modal
+                    id="modal-7"
+                    centered
+                    title="Informacion del historial de cirugia"
+                  >
+                    <h2>Historial de Cirugía</h2>
+                    <h3>Paciente: [Nombre del paciente]</h3>
+                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
+                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
+                    <p>Médico a cargo: [Nombre del médico principal]</p>
+                    <p>
+                      Equipo médico: [Lista de nombres del equipo médico
+                      involucrado]
+                    </p>
+                    <p>
+                      Descripción de la cirugía: [Breve descripción del
+                      procedimiento realizado]
+                    </p>
+                    <p>
+                      Complicaciones durante la cirugía: [Si corresponde,
+                      descripción de cualquier complicación ocurrida durante la
+                      cirugía]
+                    </p>
+                    <p>
+                      Resultado de la cirugía: [Estado del paciente después de
+                      la cirugía, por ejemplo, estable, en recuperación, alta
+                      médica, etc.]
+                    </p>
+                    <p>
+                      Observaciones: [Cualquier observación adicional relevante
+                      sobre la cirugía]
+                    </p>
+                  </b-modal>
+                  <!---------------------------------  incrustacion de modal -------------------------------->
+                </div>
+              </li>
+            </ul>
+          </template>
+        </iq-card>
       </b-col>
       <b-col lg="9">
         <iq-card>
