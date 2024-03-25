@@ -49,43 +49,55 @@
     "badge" : false
   },
   {
-    "title": "Programacion Quirurgica",
-    "name": "Programacion Quirurgica",
+    "title": "ProgramacionQuirurgica",
+    "name": "ProgramacionQuirurgica",
     "is_heading": false,
     "is_active": false,
-    "link": {
-      "name": "dashboard.programacionq"
-    },
+    "link": "",
     "class_name": "",
     "is_icon_class": true,
-    "icon": "ri-home-8-fill",
-    "badge" : false
-  },
-  {
-    "title": "Dashboard Programacion Quirurgica",
-    "name": "Dashboard Programacion Quirurgica",
-    "is_heading": false,
-    "is_active": false,
-    "link": {
-      "name": "dashboard.dashboardpq"
-    },
-    "class_name": "",
-    "is_icon_class": true,
-    "icon": "ri-home-8-fill",
-    "badge" : false
-  },
-  {
-    "title": "Calendario Cirugias",
-    "name": "Calendario Cirugias",
-    "is_heading": false,
-    "is_active": false,
-    "link": {
-      "name": "dashboard.calendariocirugias"
-    },
-    "class_name": "",
-    "is_icon_class": true,
-    "icon": "ri-home-8-fill",
-    "badge" : false
+    "icon": "fa fa-folder",
+    "badge" : false,
+    "children":[
+      {
+        "title": "Registro de Cirugias",
+        "name": "Registro de Cirugias",
+        "is_active": true,
+        "link": {
+          "name": "dashboard.programacionq"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "fa fa-address-card",
+        "badge" : false
+      },
+      {
+        "title": "Dashboard PQ",
+        "name": "Dashboard PQ",
+        "is_heading": false,
+        "is_active": false,
+        "link": {
+          "name": "dashboard.dashboardpq"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-dashboard-3-line",
+        "badge" : false
+      },
+      {
+        "title": "Calendario Cirugias",
+        "name": "Calendario Cirugias",
+        "is_heading": false,
+        "is_active": false,
+        "link": {
+          "name": "dashboard.calendariocirugias"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-calendar-todo-fill", 
+        "badge" : false
+      }
+    ]
   },
   {
     "title": "Farmacia Intrahospitalaria",

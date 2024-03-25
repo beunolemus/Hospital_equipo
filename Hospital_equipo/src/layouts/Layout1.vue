@@ -174,7 +174,7 @@
                     alt="user"
                   />
                   <div class="caption">
-                    <h6 class="mb-0 line-height">Programación Quirúrgica</h6>
+                    <h6 class="mb-0 line-height">Bini Jets</h6>
                     <span class="font-size-12">{{
                       $t("nav.user.available")
                     }}</span>
@@ -301,7 +301,7 @@ import NavBarStyle1 from "../components/xray/navbars/NavBarStyle1";
 import FooterStyle1 from "../components/xray/footer/FooterStyle1";
 import SideBarItems from "../FackApi/json/SideBar";
 import HorizontalItems from "../FackApi/json/HorizontalMenu";
-import profile from "../assets/images/user/quirofano.png";
+import profile from "../assets/images/user/1.jpg";
 import loader from "../assets/images/logo.png";
 import { xray } from "../config/pluginInit";
 import { Users } from "../FackApi/api/chat";
