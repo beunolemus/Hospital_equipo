@@ -42,6 +42,33 @@
             </ul>
           </template>
         </iq-card>
+        <iq-card>
+          <template v-slot:headerTitle>
+            <h4 class="card-title">Historial de Cirugias</h4>
+          </template>
+          <template v-slot:body>
+            <ul class="m-0 p-0 today-schedule">
+              <li class="d-flex">
+                <div class="schedule-icon">
+                  <i class="ri-checkbox-blank-circle-fill text-primary" />
+                </div>
+                <div class="schedule-text">
+                  <p>Quirófano 1</p>
+                  <p>14 de Marzo 2024</p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="schedule-icon">
+                  <i class="ri-checkbox-blank-circle-fill text-success" />
+                </div>
+                <div class="schedule-text">
+                  <span>Quirofano 2</span>
+                  <span>16 de Marzo</span>
+                </div>
+              </li>
+            </ul>
+          </template>
+        </iq-card>
       </b-col>
       <b-col lg="9">
         <iq-card>
