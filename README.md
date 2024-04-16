@@ -220,4 +220,6 @@ Se informa al paciente sobre la fecha y hora de la cirugía. Además, se proporc
 instrucciones específicas sobre la preparación preoperatoria, como ayuno y
 medicamentos.
 
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://github.com/beunolemus/Hospital_equipo/blob/Brayan/poo.jpg</span><span>)</span>
+imagen de prueba
+
+![Image text](https://github.com/beunolemus/Hospital_equipo/blob/Brayan/poo.jpg)
