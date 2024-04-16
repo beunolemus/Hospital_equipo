@@ -26,7 +26,7 @@
 
 
         <div class="form-group row">
-  <label for="sala_operaciones" class="col-sm-2 col-form-label">Sala de Operaciones:</label>
+  <label for="sala_operaciones" class="col-sm-2 col-form-label">Departamentos:</label>
   <div class="col-sm-10">
     <select id="sala_operaciones" class="form-control" v-model="cirugia.sala" required>
       <option value="">Selecciona una sala</option>
