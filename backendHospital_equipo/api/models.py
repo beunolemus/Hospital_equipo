@@ -51,17 +51,19 @@ class c_Solicitud_Cirugias(models.Model):
 
 		
 
-class horariosquirofano(models.Model):
+class horarios_quirofano(models.Model):
     Id= models.AutoField(primary_key=True)
     Fecha = models.DateField()
     HoraInicio = models.TimeField()
     HoraFin = models.TimeField()
-    class Tipo(models.TextChoices):
+    class TipoCirugia(models.TextChoices):
         Cirugia_de_corazon = 'Cirugía de corazón'
         Cirugia_de_rodilla = 'Cirugía de rodilla'
         Cirugia_de_cataratas = 'Cirugía de cataratas'
         Cirugia_de_apendice = 'Cirugía de apéndice'
         Cirugia_de_columna = 'Cirugía de columna'
+    Tipo = models.CharField(max_length=50, choices=TipoCirugia.choices)
+        
     
-        def __str__(self):
-            return f'Id horariosquirofano #{self.Id}'
+    def __str__(self):
+            return f'Id horarios_quirofano #{self.Id}'

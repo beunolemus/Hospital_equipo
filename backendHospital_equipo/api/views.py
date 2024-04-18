@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .models import CalendarioCirugia, c_cliente,c_rol,cirugias
-from .serializer import CalendarioCirugiaSerializer, c_clienteSerializer,c_rolSerializer,CirugiaSerializer
+from .models import  c_cliente,c_rol,cirugias, horarios_quirofano
+from .serializer import horarios_quirofanoSerializer, c_clienteSerializer,c_rolSerializer,CirugiaSerializer
 
 class c_clienteViewSet(viewsets.ModelViewSet):
 	queryset = c_cliente.objects.all()
@@ -11,9 +11,9 @@ class c_rolViewSet(viewsets.ModelViewSet):
 	serializer_class = c_rolSerializer
 
 
-class CalendarioCirugiaViewSet(viewsets.ModelViewSet):
-	queryset = CalendarioCirugia.objects.all()
-	serializer_class = CalendarioCirugiaSerializer 
+class horarios_quirofanoViewSet(viewsets.ModelViewSet):
+	queryset = horarios_quirofano.objects.all()
+	serializer_class = horarios_quirofanoSerializer
 
 class CirugiaViewSet(viewsets.ModelViewSet):
 	queryset = cirugias.objects.all()
