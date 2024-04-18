@@ -6,7 +6,7 @@ router = routers.DefaultRouter()
 router.register(r'c_cliente', views.c_clienteViewSet)
 router.register(r'c_rol', views.c_rolViewSet)
 router.register(r'CalendarioCirugia', views.CalendarioCirugiaViewSet)
-router.register(r'cirugias', views.CirugiaViewSet)
+router.register(r'cirugias', views.CirugiaViewSet) 
 
 
 urlpatterns = [

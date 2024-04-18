@@ -13,7 +13,7 @@ class c_rolViewSet(viewsets.ModelViewSet):
 
 class CalendarioCirugiaViewSet(viewsets.ModelViewSet):
 	queryset = CalendarioCirugia.objects.all()
-	serializer_class = CalendarioCirugiaSerializer
+	serializer_class = CalendarioCirugiaSerializer 
 
 class CirugiaViewSet(viewsets.ModelViewSet):
 	queryset = cirugias.objects.all()
