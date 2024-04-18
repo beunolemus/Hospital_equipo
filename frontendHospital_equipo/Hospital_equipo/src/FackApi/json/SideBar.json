@@ -85,6 +85,19 @@
         "badge" : false
       },
       {
+        "title": "Tabla dinamica",
+        "name": "Tabla Cirugias",
+        "is_heading": false,
+        "is_active": false,
+        "link": {
+          "name": "dashboard.cirugiasInicio"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-dashboard-3-line",
+        "badge" : false
+      },
+      {
         "title": "Calendario Cirugias",
         "name": "Calendario Cirugias",
         "is_heading": false,
