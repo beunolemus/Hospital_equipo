@@ -23,18 +23,20 @@ class c_rol(models.Model):
 	def __str__(self):
 		return self.ro_nombre
 
-class c_cirugia(models.Model):
-    nombre = models.CharField(max_length=100)
-    apellido1 = models.CharField(max_length=100)
-    apellido2 = models.CharField(max_length=100)
-    edad = models.IntegerField()
-    historial_medico = models.TextField()
-    tipo_cirugia = models.CharField(max_length=100)
-    medico = models.CharField(max_length=100)
-    fecha_y_hora = models.DateTimeField()
+
+
+class cirugias(models.Model):
+    id_cirugia = models.AutoField(primary_key=True)
+    Persona_id = models.IntegerField(unique=True)
+    medico_id = models.IntegerField(unique=True)
+    departamento_id = models.IntegerField(unique=True)
+    tipo = models.CharField(max_length=100)
+    fecha = models.DateField()
+    descripcion = models.TextField()
 
     def __str__(self):
-        return f'{self.nombre} {self.apellido1} {self.apellido2}'
+        return f'cirugias #{self.id_cirugia}'
+
 	
 
 class c_Solicitud_Cirugias(models.Model):

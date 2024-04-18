@@ -26,6 +26,7 @@
     "animate.css": "^3.7.2",
     "apexcharts": "^3.35.2",
     "autoprefixer": "latest",
+    "axios": "^1.6.8",
     "bootstrap": "^5.2.3",
     "bootstrap-vue-3": "0.4.10",
     "chart.js": "^3.4.0",
