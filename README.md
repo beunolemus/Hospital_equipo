@@ -6,7 +6,7 @@
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b" alt="logo" width="700">
+  <img src="https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b" alt="logo" width="500">
 </div>
 
 
