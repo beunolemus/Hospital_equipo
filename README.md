@@ -2,6 +2,7 @@
 
 
 
+![logo](https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b)
 
 ÍNDICE…
 • INTRODUCCIÓN…………………………………………………………
@@ -15,6 +16,10 @@
 • REQUERIMIENTOS NO FUNCIONALES……………………………………………………
 • REGLAS DE NEGOCIO………………………………………………………….
 • CONCLUSIONES INDIVIDUALES………………………………………
+![diagrama equi](https://github.com/beunolemus/Hospital_equipo/assets/161864803/17557b8d-97b5-45ec-980c-5d5a8aa6b31f)
+
+
+
 
 
 
