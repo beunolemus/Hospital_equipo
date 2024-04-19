@@ -4,18 +4,21 @@
 
 ![logo](https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b)
 
-ÍNDICE…
-• INTRODUCCIÓN…………………………………………………………
-• OBJETIVOS GENERALES…………………………………………………………
-• OBJETIVOS ESPECÍFICOS………………………………………………………….
-• CONTEXTO DEL NEGOCIO………………………………………………………….
-• ORGANIGRAMA DE LA EMPRESA……………………………………………………
-• PROCESOS DE NEGOCIO………………………………………………………….
-• PROPUESTAS DE FRONTEND………………………………………………………….
-• REQUERIMIENTOS FUNCIONALES…………………………………………………………
-• REQUERIMIENTOS NO FUNCIONALES……………………………………………………
-• REGLAS DE NEGOCIO………………………………………………………….
-• CONCLUSIONES INDIVIDUALES………………………………………
+# ÍNDICE
+
+1. [INTRODUCCIÓN](#introducción)
+2. [OBJETIVOS GENERALES](#objetivos-generales)
+3. [OBJETIVOS ESPECÍFICOS](#objetivos-específicos)
+4. [CONTEXTO DEL NEGOCIO](#contexto-del-negocio)
+5. [ORGANIGRAMA DE LA EMPRESA](#organigrama-de-la-empresa)
+6. [PROCESOS DE NEGOCIO](#procesos-de-negocio)
+7. [PROPUESTAS DE FRONTEND](#propuestas-de-frontend)
+8. [REQUERIMIENTOS FUNCIONALES](#requerimientos-funcionales)
+9. [REQUERIMIENTOS NO FUNCIONALES](#requerimientos-no-funcionales)
+10. [REGLAS DE NEGOCIO](#reglas-de-negocio)
+11. [CONCLUSIONES INDIVIDUALES](#conclusiones-individuales)
+
+
 ![diagrama equi](https://github.com/beunolemus/Hospital_equipo/assets/161864803/17557b8d-97b5-45ec-980c-5d5a8aa6b31f)
 
 
