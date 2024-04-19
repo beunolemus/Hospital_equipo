@@ -28,208 +28,65 @@
 
 
 
+# INTRODUCCIÓN
 
+En la actualidad, la presencia en línea se ha vuelto esencial para diversas organizaciones, incluidos los hospitales. El establecimiento de un sitio web para un hospital no solo es una tendencia moderna, sino también una herramienta fundamental para mejorar la comunicación, aumentar el acceso a la información médica, fortalecer los vínculos con pacientes y la comunidad, y optimizar la eficiencia en la prestación de servicios de salud. En este contexto, examinaremos las razones esenciales por las cuales resulta vital para un hospital desarrollar una presencia en línea sólida y efectiva.
 
-INTRODUCCIÓN…
-EN LA ACTUALIDAD, LA PRESENCIA EN LÍNEA SE HA VUELTO ESENCIAL PARA DIVERSAS ORGANIZACIONES,
-INCLUIDOS LOS HOSPITALES. EL ESTABLECIMIENTO DE UN SITIO WEB PARA UN HOSPITAL NO SOLO ES UNA
-TENDENCIA MODERNA, SINO TAMBIÉN UNA HERRAMIENTA FUNDAMENTAL PARA MEJORAR LA COMUNICACIÓN,
-AUMENTAR EL ACCESO A LA INFORMACIÓN MÉDICA, FORTALECER LOS VÍNCULOS CON PACIENTES Y LA
-COMUNIDAD, Y OPTIMIZAR LA EFICIENCIA EN LA PRESTACIÓN DE SERVICIOS DE SALUD. EN ESTE CONTEXTO,
-EXAMINAREMOS LAS RAZONES ESENCIALES POR LAS CUALES RESULTA VITAL PARA UN HOSPITAL DESARROLLAR
-UNA PRESENCIA EN LÍNEA SÓLIDA Y EFECTIVA.
-EN PRIMER LUGAR, UN SITIO WEB HOSPITALARIO PROPORCIONA UN ESPACIO CENTRALIZADO PARA LA
-DIVULGACIÓN DE INFORMACIÓN Y LA COMUNICACIÓN. A TRAVÉS DE ESTE MEDIO, EL HOSPITAL PUEDE
-COMPARTIR NOTICIAS RELEVANTES, ANUNCIOS IMPORTANTES, EVENTOS COMUNITARIOS Y ACTUALIZACIONES
-SOBRE SERVICIOS MÉDICOS DISPONIBLES. ESTO GARANTIZA QUE TANTO PACIENTES COMO PERSONAL MÉDICO
-ESTÉN AL TANTO DE LOS ÚLTIMOS ACONTECIMIENTOS Y AVANCES DENTRO DEL HOSPITAL, LO QUE CONTRIBUYE A
-UNA MAYOR TRANSPARENCIA Y COLABORACIÓN EN TODA LA COMUNIDAD HOSPITALARIA.
-ADEMÁS, UN SITIO WEB OFRECE UNA VALIOSA FUENTE DE INFORMACIÓN MÉDICA PARA PACIENTES Y SUS
-FAMILIAS. DESDE DETALLES SOBRE SERVICIOS MÉDICOS HASTA INFORMACIÓN SOBRE CONDICIONES DE SALUD
-ESPECÍFICAS, UN SITIO WEB BIEN ESTRUCTURADO PUEDE SERVIR COMO UNA FUENTE CONFIABLE DE
-CONOCIMIENTO MÉDICO. LOS PACIENTES PUEDEN ACCEDER A INFORMACIÓN SOBRE ENFERMEDADES,
-TRATAMIENTOS, PROCEDIMIENTOS MÉDICOS Y CONSEJOS DE BIENESTAR DESDE SUS HOGARES, LO QUE LES
-PERMITE TOMAR DECISIONES MÁS INFORMADAS SOBRE SU ATENCIÓN MÉDICA.
-OTRO ASPECTO RELEVANTE ES QUE UN SITIO WEB HOSPITALARIO PUEDE FORTALECER LA RELACIÓN ENTRE EL
-HOSPITAL Y LA COMUNIDAD QUE ATIENDE. AL PROPORCIONAR CONTENIDO RELEVANTE Y ÚTIL, COMO
-ARTÍCULOS DE SALUD, CONSEJOS DE PREVENCIÓN DE ENFERMEDADES Y RECURSOS EDUCATIVOS, EL HOSPITAL
-MUESTRA SU COMPROMISO CON EL BIENESTAR DE LA COMUNIDAD MÁS ALLÁ DE LA ATENCIÓN MÉDICA DIRECTA.
-ESTO PUEDE CONTRIBUIR A CONSTRUIR UNA IMAGEN POSITIVA DEL HOSPITAL EN LA MENTE DE LOS RESIDENTES
-LOCALES Y FOMENTAR LA CONFIANZA EN SUS SERVICIOS.
-ADEMÁS, UN SITIO WEB PUEDE SERVIR COMO UN CANAL EFECTIVO PARA LA COMUNICACIÓN BIDIRECCIONAL
-ENTRE EL HOSPITAL Y SUS PACIENTES. MEDIANTE LA INCLUSIÓN DE FORMULARIOS DE CONTACTO, CHATS EN LÍNEA
-Y SISTEMAS DE CITAS EN LÍNEA, LOS PACIENTES PUEDEN COMUNICARSE CON EL PERSONAL DEL HOSPITAL DE
-Administración de bases de datos
-4 | Página
-MANERA RÁPIDA Y CONVENIENTE. ESTO MEJORA LA EXPERIENCIA DEL PACIENTE AL FACILITAR EL ACCESO A LA
-ATENCIÓN MÉDICA Y AYUDA AL HOSPITAL A GESTIONAR DE MANERA MÁS EFICIENTE SUS RECURSOS Y AGENDAS.
-POR ÚLTIMO, UN SITIO WEB BIEN DISEÑADO PUEDE MEJORAR LA EFICIENCIA EN LA PRESTACIÓN DE SERVICIOS DE
-ATENCIÓN MÉDICA. AL PROPORCIONAR INFORMACIÓN CLARA Y DETALLADA SOBRE LOS SERVICIOS MÉDICOS
-OFRECIDOS, LOS HORARIOS DE ATENCIÓN Y LOS PROCEDIMIENTOS DE ADMISIÓN, EL HOSPITAL PUEDE REDUCIR
-LA CARGA ADMINISTRATIVA Y MEJORAR LA PLANIFICACIÓN DE RECURSOS. LOS PACIENTES PUEDEN ENCONTRAR
-LA INFORMACIÓN QUE NECESITAN SIN TENER QUE LLAMAR AL HOSPITAL, LO QUE LIBERA AL PERSONAL PARA
-CENTRARSE EN LA ATENCIÓN DIRECTA AL PACIENTE.
-EN RESUMEN, LA CREACIÓN DE UN SITIO WEB PARA UN HOSPITAL ES ESENCIAL EN EL MUNDO DIGITAL ACTUAL.
-NO SOLO SIRVE COMO UNA HERRAMIENTA DE COMUNICACIÓN Y DIVULGACIÓN DE INFORMACIÓN, SINO QUE
-TAMBIÉN FORTALECE LA RELACIÓN CON PACIENTES Y LA COMUNIDAD, MEJORA EL ACCESO A LA ATENCIÓN
-MÉDICA Y AUMENTA LA EFICIENCIA OPERATIVA DEL HOSPITAL. EN UN ENTORNO DONDE LA TECNOLOGÍA
-DESEMPEÑA UN PAPEL CRUCIAL, UN SITIO WEB HOSPITALARIO BIEN DESARROLLADO SE CONVIERTE EN UNA
-INVERSIÓN VITAL PARA EL ÉXITO CONTINUO Y LA RELEVANCIA DEL HOSPITAL EN LA COMUNIDAD QUE ATIENDE.
+## OBJETIVO GENERAL
 
+El objetivo general establece claramente la intención principal de crear un sitio web para el hospital, que es desarrollar una presencia en línea centrada en el paciente con el fin de mejorar la comunicación, aumentar el acceso a la información médica, fortalecer los lazos con la comunidad y optimizar la eficiencia en la prestación de servicios de atención médica.
 
-OBJETIVO GENERAL
-EL OBJETIVO GENERAL ESTABLECE CLARAMENTE LA INTENCIÓN PRINCIPAL DE CREAR UN SITIO WEB PARA EL
-HOSPITAL, QUE ES DESARROLLAR UNA PRESENCIA EN LÍNEA CENTRADA EN EL PACIENTE CON EL FIN DE MEJORAR
-LA COMUNICACIÓN, AUMENTAR EL ACCESO A LA INFORMACIÓN MÉDICA, FORTALECER LOS LAZOS CON LA
-COMUNIDAD Y OPTIMIZAR LA EFICIENCIA EN LA PRESTACIÓN DE SERVICIOS DE ATENCIÓN MÉDICA.
+## OBJETIVOS ESPECÍFICOS
 
-OBJETIVOS ESPECIFICOS
-1. EN PRIMER LUGAR, EL OBJETIVO DE PROPORCIONAR INFORMACIÓN DETALLADA Y ACTUALIZADA SOBRE
-LOS SERVICIOS MÉDICOS OFRECIDOS POR EL HOSPITAL ABORDA LA NECESIDAD DE QUE LOS PACIENTES
-TENGAN ACCESO RÁPIDO Y FÁCIL A INFORMACIÓN RELEVANTE SOBRE LAS ESPECIALIDADES MÉDICAS
-DISPONIBLES, LOS TRATAMIENTOS OFRECIDOS Y LOS HORARIOS DE CONSULTA. ESTO NO SOLO FACILITA
-LA TOMA DE DECISIONES INFORMADAS POR PARTE DE LOS PACIENTES, SINO QUE TAMBIÉN PUEDE AYUDAR
-A MEJORAR LA EFICIENCIA OPERATIVA DEL HOSPITAL AL REDUCIR LAS CONSULTAS INNECESARIAS.
-2. EL SEGUNDO OBJETIVO, QUE SE CENTRA EN OFRECER RECURSOS EDUCATIVOS SOBRE DIVERSAS
-CONDICIONES MÉDICAS, TRATAMIENTOS Y MEDIDAS DE PREVENCIÓN, TIENE COMO OBJETIVO
-EMPODERAR A LOS PACIENTES Y LA COMUNIDAD AL PROPORCIONARLES HERRAMIENTAS Y
-CONOCIMIENTOS PARA CUIDAR MEJOR SU SALUD. AL EDUCAR A LOS PACIENTES SOBRE LAS
-CONDICIONES MÉDICAS Y LOS TRATAMIENTOS DISPONIBLES, EL HOSPITAL PUEDE PROMOVER LA
-PREVENCIÓN Y EL AUTOCUIDADO, LO QUE A SU VEZ PUEDE CONTRIBUIR A UNA MEJOR SALUD GENERAL
-DE LA COMUNIDAD.
-3. EL TERCER OBJETIVO, QUE SE REFIERE A ESTABLECER CANALES DE COMUNICACIÓN BIDIRECCIONAL,
-COMO FORMULARIOS DE CONTACTO Y CHATS EN LÍNEA, TIENE COMO OBJETIVO MEJORAR LA
-EXPERIENCIA DEL PACIENTE AL FACILITAR LA COMUNICACIÓN CON EL PERSONAL DEL HOSPITAL. ESTO
-NO SOLO PUEDE AUMENTAR LA SATISFACCIÓN DEL PACIENTE AL PROPORCIONAR RESPUESTAS RÁPIDAS
-A SUS PREGUNTAS Y PREOCUPACIONES, SINO QUE TAMBIÉN PUEDE AYUDAR AL HOSPITAL A RECOPILAR
-COMENTARIOS Y SUGERENCIAS QUE PUEDAN UTILIZARSE PARA MEJORAR CONTINUAMENTE LOS
-SERVICIOS.
-4. EL CUARTO OBJETIVO, QUE CONSISTE EN IMPLEMENTAR UN SISTEMA DE CITAS EN LÍNEA, BUSCA OPTIMIZAR
-LA GESTIÓN DE CITAS Y REDUCIR LOS TIEMPOS DE ESPERA PARA LOS PACIENTES. AL PERMITIR QUE LOS
-PACIENTES PROGRAMEN CONSULTAS MÉDICAS Y PROCEDIMIENTOS DE MANERA CONVENIENTE Y EFICIENTE A TRAVÉS DE INTERNET, EL HOSPITAL PUEDE MEJORAR LA ACCESIBILIDAD A LA ATENCIÓN
-MÉDICA Y MEJORAR LA SATISFACCIÓN DEL PACIENTE.
-5. EL QUINTO OBJETIVO, QUE IMPLICA LA PUBLICACIÓN DE NOTICIAS, EVENTOS Y ANUNCIOS IMPORTANTES
-RELACIONADOS CON EL HOSPITAL Y LA SALUD COMUNITARIA, TIENE COMO OBJETIVO MANTENER A LOS
-PACIENTES Y LA COMUNIDAD INFORMADOS SOBRE LOS DESARROLLOS Y ACTIVIDADES DEL HOSPITAL.
-ESTO PUEDE AYUDAR A FORTALECER LA RELACIÓN ENTRE EL HOSPITAL Y LA COMUNIDAD, ASÍ COMO A
-FOMENTAR LA PARTICIPACIÓN EN EVENTOS Y PROGRAMAS DE SALUD COMUNITARIA.
-6. EL SEXTO OBJETIVO, QUE SE CENTRA EN LA CREACIÓN DE PERFILES DE MÉDICOS Y ESPECIALISTAS DEL
-HOSPITAL, TIENE COMO OBJETIVO PROPORCIONAR A LOS PACIENTES INFORMACIÓN DETALLADA SOBRE
-EL PERSONAL MÉDICO DISPONIBLE, INCLUYENDO SU EXPERIENCIA, ÁREAS DE ESPECIALIZACIÓN Y
-DISPONIBILIDAD DE CONSULTA. ESTO PUEDE AYUDAR A LOS PACIENTES A TOMAR DECISIONES
-INFORMADAS SOBRE SU ATENCIÓN MÉDICA Y A DESARROLLAR UNA RELACIÓN DE CONFIANZA CON SUS
-PROVEEDORES DE ATENCIÓN MÉDICA.
-7. EL SÉPTIMO OBJETIVO, QUE SE REFIERE A GARANTIZAR QUE EL SITIO WEB SEA FÁCIL DE NAVEGAR Y
-ACCESIBLE PARA PERSONAS CON DISCAPACIDADES, BUSCA GARANTIZAR QUE EL SITIO WEB SEA
-ACCESIBLE PARA TODOS LOS USUARIOS, INDEPENDIENTEMENTE DE SUS HABILIDADES O LIMITACIONES
-FÍSICAS. ESTO NO SOLO CUMPLE CON LOS ESTÁNDARES DE ACCESIBILIDAD WEB, SINO QUE TAMBIÉN
-DEMUESTRA EL COMPROMISO DEL HOSPITAL CON LA INCLUSIÓN Y LA EQUIDAD EN EL ACCESO A LA
-INFORMACIÓN MÉDICA.
-8. EL OCTAVO OBJETIVO, QUE IMPLICA RECOPILAR Y ANALIZAR DATOS DE TRÁFICO WEB Y COMENTARIOS
-DE LOS USUARIOS, TIENE COMO OBJETIVO MEJORAR CONTINUAMENTE LA EXPERIENCIA DEL USUARIO Y
-LA EFECTIVIDAD DEL SITIO WEB. AL MONITOREAR EL TRÁFICO DEL SITIO WEB Y RECOPILAR COMENTARIOS
-DE LOS USUARIOS, EL HOSPITAL PUEDE IDENTIFICAR ÁREAS DE MEJORA Y REALIZAR AJUSTES PARA
-OPTIMIZAR LA USABILIDAD Y LA UTILIDAD DEL SITIO WEB.
-9. EL NOVENO OBJETIVO, QUE SE REFIERE A INTEGRAR HERRAMIENTAS DE EDUCACIÓN EN SALUD, COMO
-VIDEOS INSTRUCTIVOS Y FOLLETOS DESCARGABLES, TIENE COMO OBJETIVO PROMOVER UNA MAYOR
-COMPRENSIÓN DE LOS TRATAMIENTOS MÉDICOS Y LOS PROCEDIMIENTOS HOSPITALARIOS ENTRE LOS
-PACIENTES Y LA COMUNIDAD. ESTO PUEDE AYUDAR A EMPODERAR A LOS PACIENTES AL
-PROPORCIONARLES INFORMACIÓN QUE LES PERMITA TOMAR DECISIONES INFORMADAS SOBRE SU
-ATENCIÓN MÉDICA Y PARTICIPAR ACTIVAMENTE EN SU PROCESO DE RECUPERACIÓN.
-10.EL DÉCIMO OBJETIVO, QUE CONSISTE EN COLABORAR CON OTRAS INSTITUCIONES DE SALUD Y
-ORGANIZACIONES COMUNITARIAS, TIENE COMO OBJETIVO COMPARTIR RECURSOS Y PROMOVER
-INICIATIVAS DE SALUD PÚBLICA A TRAVÉS DEL SITIO WEB DEL HOSPITAL. AL TRABAJAR EN COLABORACIÓN
-CON OTRAS ORGANIZACIONES, EL HOSPITAL PUEDE AMPLIFICAR EL IMPACTO DE SUS ESFUERZOS Y
-ABORDAR DE MANERA MÁS EFECTIVA LOS DESAFÍOS DE SALUD PÚBLICA QUE AFECTAN A LA
-COMUNIDAD.
+1. **Proporcionar información detallada y actualizada sobre los servicios médicos ofrecidos por el hospital.**
+2. **Ofrecer recursos educativos sobre diversas condiciones médicas, tratamientos y medidas de prevención.**
+3. **Establecer canales de comunicación bidireccional con los pacientes.**
+4. **Implementar un sistema de citas en línea para optimizar la gestión de citas.**
+5. **Publicar noticias, eventos y anuncios importantes relacionados con el hospital y la salud comunitaria.**
+6. **Crear perfiles de médicos y especialistas del hospital para proporcionar información detallada a los pacientes.**
+7. **Garantizar que el sitio web sea fácil de navegar y accesible para personas con discapacidades.**
+8. **Recopilar y analizar datos de tráfico web y comentarios de los usuarios para mejorar continuamente la experiencia del usuario y la efectividad del sitio web.**
+9. **Integrar herramientas de educación en salud, como videos instructivos y folletos descargables.**
+10. **Colaborar con otras instituciones de salud y organizaciones comunitarias para compartir recursos y promover iniciativas de salud pública.**
 
-CONTEXTO DEL NEGOCIO
-AREA PROGRAMACION QUIRURGICA
-El área de programación quirúrgica dentro de un hospital es responsable de coordinar
-y gestionar todas las actividades relacionadas con las cirugías programadas. Esta área
-se encarga de planificar y organizar los procedimientos quirúrgicos de manera
-eficiente, asegurando que todos los recursos necesarios estén disponibles y asignados
-correctamente para cada intervención.
+## CONTEXTO DEL NEGOCIO
+
+### ÁREA PROGRAMACIÓN QUIRÚRGICA
+
+El área de programación quirúrgica dentro de un hospital es responsable de coordinar y gestionar todas las actividades relacionadas con las cirugías programadas. Esta área se encarga de planificar y organizar los procedimientos quirúrgicos de manera eficiente, asegurando que todos los recursos necesarios estén disponibles y asignados correctamente para cada intervención.
+
 Entre las principales funciones del área de programación quirúrgica se encuentran:
-Planificación de Cirugías: Se encarga de agendar las cirugías de acuerdo con la
-disponibilidad de quirófanos, equipos médicos, personal quirúrgico y pacientes. Esto
-implica coordinar con los diferentes especialistas médicos y quirúrgicos para
-programar las intervenciones en los horarios más adecuados.
-Asignación de Recursos: Gestiona la asignación de quirófanos, equipos médicos
-especializados, instrumentos quirúrgicos y personal necesario para cada cirugía. Esto
-incluye coordinar la preparación de los quirófanos antes de cada intervención y
-asegurar que todo esté listo y en condiciones óptimas.
-Priorización de Casos: Evalúa la urgencia y complejidad de cada caso para
-determinar el orden de programación de las cirugías. Los casos urgentes o de mayor
-complejidad suelen recibir prioridad para asegurar una atención rápida y adecuada.
-Comunicación Interdisciplinaria: Facilita la comunicación entre los diferentes
-profesionales de la salud involucrados en el proceso quirúrgico, como cirujanos,
-anestesiólogos, enfermeras, técnicos quirúrgicos y personal administrativo. Esto
-garantiza una coordinación efectiva y una atención integral para cada paciente.
-Seguimiento y Actualización: Realiza un seguimiento continuo de las programaciones
-quirúrgicas, actualizando los horarios según sea necesario y gestionando posibles
-cambios o cancelaciones de cirugías. También se encarga de mantener registros
-precisos y actualizados de todas las actividades realizadas en el área.
 
-ORGANIGRAMA DE LA EMPRESA
+- Planificación de Cirugías
+- Asignación de Recursos
+- Priorización de Casos
+- Comunicación Interdisciplinaria
+- Seguimiento y Actualización
 
-Servicios Médicos:
-• Descripción: Estos servicios comprenden las actividades médicas esenciales,
-como consultas, diagnósticos, tratamientos, cirugías y hospitalización. Incluye la
-atención de médicos especialistas y generales, así como el uso de tecnologías
-médicas avanzadas.
-• Funciones: Brindar atención médica directa a los pacientes, diagnosticar y tratar
-enfermedades, realizar intervenciones médicas, y coordinar la atención integral
-de los pacientes.
-Servicios de Apoyo:
-• Descripción: Estos servicios incluyen áreas como laboratorios, radiología,
-farmacia y servicios de rehabilitación. Su función es proporcionar apoyo
-diagnóstico y terapéutico a los pacientes y al personal médico.
-• Funciones: Realizar pruebas y análisis para el diagnóstico, proporcionar
-imágenes médicas, dispensar medicamentos y ofrecer terapias físicas o de
-rehabilitación.
+### ORGANIGRAMA DE LA EMPRESA
 
+#### Servicios Médicos:
+Descripción y funciones.
 
-Servicios Medico-Administrativos:
-• Descripción: Engloba funciones administrativas relacionadas con la gestión y
-organización de los recursos médicos. Incluye áreas como facturación, gestión
-de citas, registros médicos y coordinación de servicios.
-• Funciones: Gestionar citas, mantener registros médicos, coordinar servicios
-hospitalarios, manejar la facturación y proporcionar apoyo administrativo al
-personal médico.
-Servicios de Enfermería:
-• Descripción: Se centra en la atención directa a los pacientes, administración de
-medicamentos, seguimiento de tratamientos, y colaboración con el personal
-médico en la atención integral.
-• Funciones: Proporcionar cuidados directos a los pacientes, administrar
-medicamentos, realizar seguimiento de tratamientos, y colaborar estrechamente
-con médicos y especialistas.
-Departamentos Administrativos:
-• Descripción: Estos departamentos se encargan de la gestión general del
-hospital. Incluyen recursos humanos, finanzas, tecnologías de la información, y
-otros aspectos administrativos.
-• Funciones: Gestionar el personal, manejar las finanzas del hospital, mantener y
-mejorar la infraestructura tecnológica, y asegurar el cumplimiento de
-regulaciones y normativas.
+#### Servicios de Apoyo:
+Descripción y funciones.
 
-PROCESOS DE NEGOCIO
-Solicitud de Cirugía:
-Los médicos envían solicitudes de cirugía para sus pacientes. Estas solicitudes pueden
-ser para procedimientos planificados o cirugías de emergencia.
-Disponibilidad de Quirófanos:
-Se verifica la disponibilidad de quirófanos para programar las cirugías. Esto implica
-coordinarse con otros departamentos para asegurar que los quirófanos estén
-equipados y listos para su uso.
-Comunicación con el Personal:
-Se comunica a todo el personal involucrado en la cirugía sobre la programación. Esto
-incluye a cirujanos, enfermeras, anestesiólogos y cualquier otro miembro del equipo
-necesario.
-Asignación de Recursos:
-Se asignan recursos necesarios para cada cirugía, incluyendo personal médico,
-enfermeras, anestesiólogos y equipos específicos.
-Preparación del Paciente:
-Se informa al paciente sobre la fecha y hora de la cirugía. Además, se proporcionan
-instrucciones específicas sobre la preparación preoperatoria, como ayuno y
-medicamentos.
+#### Servicios Medico-Administrativos:
+Descripción y funciones.
+
+#### Servicios de Enfermería:
+Descripción y funciones.
+
+#### Departamentos Administrativos:
+Descripción y funciones.
+
+## PROCESOS DE NEGOCIO
+
+1. **Solicitud de Cirugía:** Los médicos envían solicitudes de cirugía para sus pacientes.
+2. **Disponibilidad de Quirófanos:** Se verifica la disponibilidad de quirófanos para programar las cirugías.
+3. **Comunicación con el Personal:** Se comunica a todo el personal involucrado en la cirugía sobre la programación.
+4. **Asignación de Recursos:** Se asignan recursos necesarios para cada cirugía.
+5. **Preparación del Paciente:** Se informa al paciente sobre la fecha y hora de la cirugía.
+
 
 
