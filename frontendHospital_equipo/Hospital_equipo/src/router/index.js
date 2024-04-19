@@ -104,6 +104,8 @@ import dashboardPQ from "../views/ProgramacionQuirurgica/dashboardPQ.vue";
 import calendariocirugias from "../views/ProgramacionQuirurgica/calendariocirugias.vue";
 import cirugiasInicio from "../views/ProgramacionQuirurgica/cirugiasInicio.vue";
 
+
+
 const childRoutes = (prop, mode) => [
   {
     path: "home-1",
@@ -165,6 +167,10 @@ const childRoutes = (prop, mode) => [
     meta: { dark: mode, auth: true, name: "DashBoard Programación Quirurgica" },
     component: dashboardPQ,
   },
+
+
+
+
   {
     path: "calendariocirugias",
     name: prop + ".calendariocirugias",
@@ -177,6 +183,12 @@ const childRoutes = (prop, mode) => [
     meta: { dark: mode, auth: true, name: "Tabla Cirugias" },
     component: cirugiasInicio,
   },
+
+  
+
+
+
+
   {
     path: "radiologiai",
     name: prop + ".radiologiai",

@@ -11,41 +11,36 @@
       </div>
       <form>
         <div class="form-group row">
-          <label for="nombrePaciente" class="col-sm-2 col-form-label">Paciente:</label>
+          <label for="Persona_id" class="col-sm-2 col-form-label">Persona ID:</label>
           <div class="col-sm-10">
-            <input type="text" id="nombrePaciente" class="form-control" v-model="cirugia.paciente" placeholder="Nombre del paciente" required>
+            <input type="number" id="Persona_id" class="form-control" v-model="cirugia.persona_id" placeholder="Persona ID" required>
           </div>
         </div>
 
         <div class="form-group row">
-          <label for="nombreDoctor" class="col-sm-2 col-form-label">Doctor:</label>
+          <label for="medico_id" class="col-sm-2 col-form-label">Medico ID:</label>
           <div class="col-sm-10">
-            <input type="text" id="nombreDoctor" class="form-control" v-model="cirugia.doctor" placeholder="Nombre del Doctor" required>
+            <input type="number" id="medico_id" class="form-control" v-model="cirugia.medico_id" placeholder="Médico ID" required>
           </div>
         </div>
 
-
         <div class="form-group row">
-  <label for="sala_operaciones" class="col-sm-2 col-form-label">Departamentos:</label>
-  <div class="col-sm-10">
-    <select id="sala_operaciones" class="form-control" v-model="cirugia.sala" required>
-      <option value="">Selecciona una sala</option>
-      <option v-for="numero in 10" :key="numero" :value="numero">{{ numero }}</option>
-    </select>
-  </div>
-</div>
-
-
-        <div class="form-group row">
-          <label for="tipoCirugia" class="col-sm-2 col-form-label">Tipo de Cirugía:</label>
+          <label for="departamento_id" class="col-sm-2 col-form-label">Departamento ID:</label>
           <div class="col-sm-10">
-            <input type="text" id="tipoCirugia" class="form-control" v-model="cirugia.tipo" placeholder="Tipo de cirugía realizada" required>
+            <input type="number" id="departamento_id" class="form-control" v-model="cirugia.departamento_id" placeholder="Departamento ID" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="tipo" class="col-sm-2 col-form-label">Tipo de Cirugía:</label>
+          <div class="col-sm-10">
+            <input type="text" id="tipo" class="form-control" v-model="cirugia.tipo" placeholder="Tipo de cirugía realizada" required>
           </div>
         </div>
         <div class="form-group row">
-          <label for="fechaCirugia" class="col-sm-2 col-form-label">Fecha de Cirugía:</label>
+          <label for="fecha" class="col-sm-2 col-form-label">Fecha de Cirugía:</label>
           <div class="col-sm-10">
-            <input type="date" id="fechaCirugia" class="form-control" v-model="cirugia.fecha" required>
+            <input type="date" id="fecha" class="form-control" v-model="cirugia.fecha" required>
           </div>
         </div>
         <div class="form-group row">
@@ -73,7 +68,9 @@ export default {
   data() {
     return {
       cirugia: {
-        paciente: '',
+        Persona_id: '',
+        medico_id: '',
+        departamento_id: '',
         tipo: '',
         fecha: '',
         descripcion: ''
@@ -92,7 +89,9 @@ export default {
     },
     limpiarFormulario() {
       // Método para limpiar el formulario después de guardar la cirugía
-      this.cirugia.paciente = '';
+      this.cirugia.Persona_id = '';
+      this.cirugia.medico_id = '';
+      this.cirugia.departamento_id = '';
       this.cirugia.tipo = '';
       this.cirugia.fecha = '';
       this.cirugia.descripcion = '';

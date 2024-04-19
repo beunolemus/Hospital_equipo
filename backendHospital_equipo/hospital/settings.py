@@ -102,10 +102,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'localhost',
-        'USER': 'Hospital_programacion',
-        'PASSWORD': 'p123q',
+        'USER': 'root',
+        'PASSWORD': '1234',
         'PORT': '3306',
-        'NAME': 'bd_hospital_equipo',
+        'NAME': 'bd_equipo',
     }
 }
 
