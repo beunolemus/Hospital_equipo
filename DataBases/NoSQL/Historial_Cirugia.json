@@ -2,215 +2,287 @@
   "_id": {
     "$oid": "6601f3223ec7299d95f7939b"
   },
+  "Paciente": "María García",
   "Fecha": "2024-04-10",
   "Nombre_Medico": "Dr. Sánchez",
   "Tipo_Cirugias": "Cirugía de apéndice",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f7939c"
   },
+  "Paciente": "Juan Perez",
   "Fecha": "2024-05-15",
   "Nombre_Medico": "Dr. López",
   "Tipo_Cirugias": "Cirugía de cataratas",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Hemorragia postoperatoria",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f7939d"
   },
+  "Paciente": "Luis González",
   "Fecha": "2024-06-20",
   "Nombre_Medico": "Dr. Ramírez",
   "Tipo_Cirugias": "Cirugía de rodilla",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Infección en la herida",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f7939e"
   },
+  "Paciente": "Ana Martínez",
   "Fecha": "2024-07-25",
   "Nombre_Medico": "Dra. González",
   "Tipo_Cirugias": "Cirugía de columna vertebral",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f7939f"
   },
+  "Paciente": "Pedro Rodríguez",
   "Fecha": "2024-08-30",
   "Nombre_Medico": "Dra. Pérez",
   "Tipo_Cirugias": "Cirugía de tiroides",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a0"
   },
+  "Paciente": "Laura Díaz",
   "Fecha": "2024-09-05",
   "Nombre_Medico": "Dr. Martínez",
   "Tipo_Cirugias": "Cirugía de cadera",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Reacción alérgica a la anestesia",
+  "Resultado de cirugia": "Fracaso"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a1"
   },
+  "Paciente": "Diego Hernández",
   "Fecha": "2024-10-10",
   "Nombre_Medico": "Dra. Gómez",
   "Tipo_Cirugias": "Cirugía de vesícula biliar",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a2"
   },
+  "Paciente": "Sofía López",
   "Fecha": "2024-11-15",
   "Nombre_Medico": "Dr. Pérez",
   "Tipo_Cirugias": "Cirugía de hernia inguinal",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a3"
   },
+  "Paciente": "Carla Castro",
   "Fecha": "2024-12-20",
   "Nombre_Medico": "Dr. Ramírez",
   "Tipo_Cirugias": "Cirugía de nariz",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Perforación intestinal",
+  "Resultado de cirugia": "Fracaso"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a4"
   },
+  "Paciente": "Carlos Ruiz",
   "Fecha": "2025-01-25",
   "Nombre_Medico": "Dra. Gutiérrez",
   "Tipo_Cirugias": "Cirugía de amígdalas",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a5"
   },
+  "Paciente": "Elena Fernández",
   "Fecha": "2025-02-28",
   "Nombre_Medico": "Dr. Hernández",
   "Tipo_Cirugias": "Cirugía de hernia discal",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a6"
   },
+  "Paciente": "Andrés Pérez",
   "Fecha": "2025-03-05",
   "Nombre_Medico": "Dra. Sánchez",
   "Tipo_Cirugias": "Cirugía de apendicitis",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Error quirúrgico",
+  "Resultado de cirugia": "Fracaso"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a7"
   },
+  "Paciente": "Carmen González",
   "Fecha": "2025-04-10",
   "Nombre_Medico": "Dr. Ruiz",
   "Tipo_Cirugias": "Cirugía de muñeca",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a8"
   },
+  "Paciente": "Daniel Martínez",
   "Fecha": "2025-05-15",
   "Nombre_Medico": "Dr. López",
   "Tipo_Cirugias": "Cirugía de riñón",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Infección de la herida quirúrgica",
+  "Resultado de cirugia": "Fracaso"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793a9"
   },
+  "Paciente": "Marina López",
   "Fecha": "2025-06-20",
   "Nombre_Medico": "Dr. Martínez",
   "Tipo_Cirugias": "Cirugía de corazón",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793aa"
   },
+  "Paciente": "Manuel Pérez",
   "Fecha": "2025-07-25",
   "Nombre_Medico": "Dra. Gómez",
   "Tipo_Cirugias": "Cirugía de cataratas",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793ab"
   },
+  "Paciente": "Paula Rodríguez",
   "Fecha": "2025-08-30",
   "Nombre_Medico": "Dra. Pérez",
   "Tipo_Cirugias": "Cirugía de rodilla",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Compresión nerviosa",
+  "Resultado de cirugia": "Fracaso"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793ac"
   },
+  "Paciente": "Antonio Martínez",
   "Fecha": "2025-09-05",
   "Nombre_Medico": "Dr. Sánchez",
   "Tipo_Cirugias": "Cirugía de columna vertebral",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793ad"
   },
+  "Paciente": "Isabel Sánchez",
   "Fecha": "2025-10-10",
   "Nombre_Medico": "Dra. Gutiérrez",
   "Tipo_Cirugias": "Cirugía de tiroides",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793ae"
   },
+  "Paciente": "Javier González",
   "Fecha": "2025-11-15",
   "Nombre_Medico": "Dr. Hernández",
   "Tipo_Cirugias": "Cirugía de cadera",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793af"
   },
+  "Paciente": "María López",
   "Fecha": "2025-12-20",
   "Nombre_Medico": "Dr. Ramírez",
   "Tipo_Cirugias": "Cirugía de vesícula biliar",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Ninguna",
+  "Resultado de cirugia": "Éxito"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793b0"
   },
+  "Paciente": "Juan Pérez",
   "Fecha": "2026-01-25",
   "Nombre_Medico": "Dr. Martínez",
   "Tipo_Cirugias": "Cirugía de hernia inguinal",
-  "Sala_Operaciones": "Sala 2"
+  "Sala_Operaciones": "Sala 2",
+  "Complicaciones": "Infección postoperatoria",
+  "Resultado de cirugia": "Requiere seguimiento"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793b1"
   },
+  "Paciente": "Ana García",
   "Fecha": "2026-02-28",
   "Nombre_Medico": "Dra. Sánchez",
   "Tipo_Cirugias": "Cirugía de nariz",
-  "Sala_Operaciones": "Sala 3"
+  "Sala_Operaciones": "Sala 3",
+  "Complicaciones": "Hemorragia durante la cirugía",
+  "Resultado de cirugia": "Estable"
 },
 {
   "_id": {
     "$oid": "6601f3223ec7299d95f793b2"
   },
+  "Paciente": "Pedro Rodríguez",
   "Fecha": "2026-03-05",
   "Nombre_Medico": "Dr. López",
   "Tipo_Cirugias": "Cirugía de amígdalas",
-  "Sala_Operaciones": "Sala 1"
+  "Sala_Operaciones": "Sala 1",
+  "Complicaciones": "Reacción alérgica a la anestesia",
+  "Resultado de cirugia": "En observación"
 }]
