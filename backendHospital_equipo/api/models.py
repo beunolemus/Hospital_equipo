@@ -51,14 +51,19 @@ class c_Solicitud_Cirugias(models.Model):
 
 		
 
-class CalendarioCirugia(models.Model):
-	c_cliente = models.ForeignKey(c_cliente, on_delete=models.CASCADE)
-nombreMedico = models.TextField(max_length=100)
-    #cirujano = models.ForeignKey(Cirujano, on_delete=models.CASCADE)
-    #sala = models.ForeignKey(Sala, on_delete=models.CASCADE)
-fecha = models.DateField()
-hora_inicio = models.TimeField()
-hora_fin = models.TimeField()
-descripcion = models.TextField(max_length=150)
-salaOperaciones = models.TextField(max_length=150)
-tipoCirugia = models.TextField(max_length=150)
+class horarios_quirofano(models.Model):
+    Id= models.AutoField(primary_key=True)
+    Fecha = models.DateField()
+    HoraInicio = models.TimeField()
+    HoraFin = models.TimeField()
+    class TipoCirugia(models.TextChoices):
+        Cirugia_de_corazon = 'Cirugía de corazón'
+        Cirugia_de_rodilla = 'Cirugía de rodilla'
+        Cirugia_de_cataratas = 'Cirugía de cataratas'
+        Cirugia_de_apendice = 'Cirugía de apéndice'
+        Cirugia_de_columna = 'Cirugía de columna'
+    Tipo = models.CharField(max_length=50, choices=TipoCirugia.choices)
+        
+    
+    def __str__(self):
+            return f'Id horarios_quirofano #{self.Id}'
