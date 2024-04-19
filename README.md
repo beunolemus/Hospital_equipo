@@ -6,7 +6,8 @@
 
 
 
-![logo](https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b)
+<img src="https://github.com/beunolemus/Hospital_equipo/assets/161864803/89d68acd-0bdb-4c8e-a154-c51a42e1fb8b" alt="logo" width="700">
+
 
 # ÍNDICE
 
@@ -23,7 +24,10 @@
 11. [CONCLUSIONES INDIVIDUALES](#conclusiones-individuales)
 
 
-![diagrama equi](https://github.com/beunolemus/Hospital_equipo/assets/161864803/17557b8d-97b5-45ec-980c-5d5a8aa6b31f)
+![image](https://github.com/beunolemus/Hospital_equipo/assets/161864803/503b972e-baa0-4886-b779-3532e13669f5)
+
+
+
 
 
 
@@ -65,20 +69,9 @@ Entre las principales funciones del área de programación quirúrgica se encuen
 
 ### ORGANIGRAMA DE LA EMPRESA
 
-#### Servicios Médicos:
-Descripción y funciones.
+![diagrama equi](https://github.com/beunolemus/Hospital_equipo/assets/161864803/17557b8d-97b5-45ec-980c-5d5a8aa6b31f)
 
-#### Servicios de Apoyo:
-Descripción y funciones.
 
-#### Servicios Medico-Administrativos:
-Descripción y funciones.
-
-#### Servicios de Enfermería:
-Descripción y funciones.
-
-#### Departamentos Administrativos:
-Descripción y funciones.
 
 ## PROCESOS DE NEGOCIO
 
