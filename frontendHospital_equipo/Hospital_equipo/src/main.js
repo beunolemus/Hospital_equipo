@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createPinia } from 'pinia' //Pinia
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import Raphael from 'raphael/raphael'
@@ -11,18 +11,16 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import VueECharts from 'vue-echarts'
 import 'echarts'
 import CanvasJSChart from '@canvasjs/vue-charts'
-
 import VueSelect from './plugins/vue-select'
+import VuePaginate from 'vue-paginate'; // Importa VuePaginate
 
 global.Raphael = Raphael
 
 const app = createApp(App)
-// pinia creat
 const pinia = createPinia()
 
 app.config.productionTip = false
 app.use(router).use(i18n).use(BootstrapVue3)
-// Component
 app.component('v-chart', VueECharts)
 
 import TabNav from './components/bootstrap/tab-nav.vue'
@@ -36,10 +34,9 @@ app.component('tab-content', TabContent)
 app.component('tab-content-item', TabContentItem)
 app.use(VueSelect)
 app.use(CanvasJSChart)
-// .use(VuejsDatatableFactory)
-
-// pinia use
 app.use(pinia)
+
+app.component('vue-paginate', VuePaginate); // Registra el componente VuePaginate
 
 app.mount('#app')
 export default app
