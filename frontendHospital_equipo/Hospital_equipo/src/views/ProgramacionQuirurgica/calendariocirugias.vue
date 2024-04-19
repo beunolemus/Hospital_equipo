@@ -17,6 +17,8 @@
             </ul>
           </template>
         </iq-card>
+
+
         <iq-card>
           <template v-slot:headerTitle>
             <h4 class="card-title">Citas para Hoy</h4>
@@ -42,6 +44,7 @@
             </ul>
           </template>
         </iq-card>
+        
         <!--  historial de cirugias -->
         <iq-card>
           <template v-slot:headerTitle>
