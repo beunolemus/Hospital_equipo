@@ -14,6 +14,9 @@ import CanvasJSChart from '@canvasjs/vue-charts'
 import VueSelect from './plugins/vue-select'
 import VuePaginate from 'vue-paginate'; // Importa VuePaginate
 
+
+
+    
 global.Raphael = Raphael
 
 const app = createApp(App)
