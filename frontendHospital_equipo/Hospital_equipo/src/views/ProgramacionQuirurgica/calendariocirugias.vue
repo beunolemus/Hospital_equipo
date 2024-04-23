@@ -17,6 +17,8 @@
             </ul>
           </template>
         </iq-card>
+
+
         <iq-card>
           <template v-slot:headerTitle>
             <h4 class="card-title">Citas para Hoy</h4>
@@ -42,6 +44,7 @@
             </ul>
           </template>
         </iq-card>
+        
         <!--  historial de cirugias -->
         <iq-card>
           <template v-slot:headerTitle>
@@ -59,131 +62,30 @@
                     <span>Quirofano 1</span>
                     <span>14 de Marzo</span>
                   </b-button>
-                  <b-modal
+                  <b-modal 
                     id="modal-7"
                     centered
-                    title="Informacion del historial de cirugia"
+                    title="Informacion del historial de cirugia" 
                   >
-                    <h2>Historial de Cirugía</h2>
-                    <h3>Paciente: [Nombre del paciente]</h3>
-                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
-                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
-                    <p>Médico a cargo: [Nombre del médico principal]</p>
+                  <li v-for="(item, historial_cirugias) in historial_cirugias" :key="historial_cirugias._id">
+                  <h2>Historial de Cirugía</h2>
+                  <hr>
+                    <p><b>Paciente:</b> {{ item.Paciente }}</p>
+                    <p><b>Médico a cargo:</b> {{ item.Nombre_Medico}}</p>
+                    <p><b> de la cirugía:</b> {{ item.date  }}</p>
+                    <p><b>Tipo de cirugía:</b> {{ item.Tipo_Cirugias }}</p>
+                    <p><b>Sala de operacion</b> {{ item.Sala_Operaciones }}</p>
                     <p>
-                      Equipo médico: [Lista de nombres del equipo médico
-                      involucrado]
+                     <b>Complicaciones de cirugia:</b> {{ item.Complicaciones  }}
                     </p>
+                    <p><b>Resultado de cirugia</b> {{ item.Resultado_de_cirugia }}</p>
                     <p>
-                      Descripción de la cirugía: [Breve descripción del
-                      procedimiento realizado]
+                      <b>Descripción de la cirugía:</b> {{ item.Descripcion }}
                     </p>
-                    <p>
-                      Complicaciones durante la cirugía: [Si corresponde,
-                      descripción de cualquier complicación ocurrida durante la
-                      cirugía]
-                    </p>
-                    <p>
-                      Resultado de la cirugía: [Estado del paciente después de
-                      la cirugía, por ejemplo, estable, en recuperación, alta
-                      médica, etc.]
-                    </p>
-                    <p>
-                      Observaciones: [Cualquier observación adicional relevante
-                      sobre la cirugía]
-                    </p>
+                    <p><b>Fecha de cirugia</b> {{  item.date }}</p>
+      
+                  </li>
                   </b-modal>
-                </div>
-              </li>
-              <li class="d-flex">
-                <div class="schedule-icon">
-                  <i class="ri-checkbox-blank-circle-fill text-success" />
-                </div>
-                <div class="schedule-text">
-                  <!---------------------------------  incrustacion de modal -------------------------------->
-                  <b-button v-b-modal.modal-7 variant="link" class="mb-3 me-1">
-                    <span>Quirofano 2</span>
-                    <span>16 de Marzo</span>
-                  </b-button>
-                  <b-modal
-                    id="modal-7"
-                    centered
-                    title="Informacion del historial de cirugia"
-                  >
-                    <h2>Historial de Cirugía</h2>
-                    <h3>Paciente: [Nombre del paciente]</h3>
-                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
-                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
-                    <p>Médico a cargo: [Nombre del médico principal]</p>
-                    <p>
-                      Equipo médico: [Lista de nombres del equipo médico
-                      involucrado]
-                    </p>
-                    <p>
-                      Descripción de la cirugía: [Breve descripción del
-                      procedimiento realizado]
-                    </p>
-                    <p>
-                      Complicaciones durante la cirugía: [Si corresponde,
-                      descripción de cualquier complicación ocurrida durante la
-                      cirugía]
-                    </p>
-                    <p>
-                      Resultado de la cirugía: [Estado del paciente después de
-                      la cirugía, por ejemplo, estable, en recuperación, alta
-                      médica, etc.]
-                    </p>
-                    <p>
-                      Observaciones: [Cualquier observación adicional relevante
-                      sobre la cirugía]
-                    </p>
-                  </b-modal>
-                  <!---------------------------------  incrustacion de modal -------------------------------->
-                </div>
-              </li>
-              <li class="d-flex">
-                <div class="schedule-icon">
-                  <i class="ri-checkbox-blank-circle-fill text-success" />
-                </div>
-                <div class="schedule-text">
-                  <!---------------------------------  incrustacion de modal -------------------------------->
-                  <b-button v-b-modal.modal-7 variant="link" class="mb-3 me-1">
-                    <span>Quirofano 3</span>
-                    <span>22 de Marzo</span>
-                  </b-button>
-                  <b-modal
-                    id="modal-7"
-                    centered
-                    title="Informacion del historial de cirugia"
-                  >
-                    <h2>Historial de Cirugía</h2>
-                    <h3>Paciente: [Nombre del paciente]</h3>
-                    <p>Fecha de la cirugía: [Fecha de la cirugía]</p>
-                    <p>Tipo de cirugía: [Tipo de procedimiento realizado]</p>
-                    <p>Médico a cargo: [Nombre del médico principal]</p>
-                    <p>
-                      Equipo médico: [Lista de nombres del equipo médico
-                      involucrado]
-                    </p>
-                    <p>
-                      Descripción de la cirugía: [Breve descripción del
-                      procedimiento realizado]
-                    </p>
-                    <p>
-                      Complicaciones durante la cirugía: [Si corresponde,
-                      descripción de cualquier complicación ocurrida durante la
-                      cirugía]
-                    </p>
-                    <p>
-                      Resultado de la cirugía: [Estado del paciente después de
-                      la cirugía, por ejemplo, estable, en recuperación, alta
-                      médica, etc.]
-                    </p>
-                    <p>
-                      Observaciones: [Cualquier observación adicional relevante
-                      sobre la cirugía]
-                    </p>
-                  </b-modal>
-                  <!---------------------------------  incrustacion de modal -------------------------------->
                 </div>
               </li>
             </ul>
@@ -226,9 +128,11 @@ import { xray } from "./calendario/pluginInit.js";
 import FullCalendar from "./calendario/FullCalendar.vue";
 import moment from "moment";
 
+import axios from "axios";
+
 export default {
   name: "GoogleCalendar",
-  components: { iqCard, FullCalendar },
+  components: { iqCard, FullCalendar, },
   data() {
     const events = ref([
       {
@@ -418,6 +322,8 @@ export default {
     const endTime = ref("");
     const show = ref(false);
     return {
+      historial_cirugias: [],
+      baseURL: "http://localhost:3000",
       events,
       dateOption,
       inlineDatepicker,
@@ -433,8 +339,22 @@ export default {
   },
   mounted() {
     xray.index();
+    this.getPosts();
   },
-  computed: {},
-  methods: {},
+  created() {
+    this.getPosts();
+  },
+  methods: {
+    async getPosts() {
+      try {
+        const res = await axios.get(`${this.baseURL}/Historial_Cirugias`);
+        console.log(res.data); 
+        this.historial_cirugias = res.data.historial_cirugias;
+        console.log("linea 457"+this.historial_cirugias);
+      } catch (error) {
+        console.error('Error al obtener los posts:', error);
+      }  
+    }
+  },
 };
 </script>
