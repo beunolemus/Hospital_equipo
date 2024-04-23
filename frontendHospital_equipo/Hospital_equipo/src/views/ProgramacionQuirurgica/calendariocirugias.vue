@@ -350,7 +350,6 @@ export default {
         const res = await axios.get(`${this.baseURL}/Historial_Cirugias`);
         console.log(res.data); 
         this.historial_cirugias = res.data.historial_cirugias;
-        console.log("linea 457"+this.historial_cirugias);
       } catch (error) {
         console.error('Error al obtener los posts:', error);
       }  

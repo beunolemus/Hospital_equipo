@@ -4,7 +4,7 @@
       <b-col lg="6" sm="12">
         <iq-card>
           <template v-slot:headerTitle>
-            <h4>Line chart</h4>
+            <h4>Line chart hola</h4>
           </template>
           <template v-slot:body>
             <!-- <MorrisChart
