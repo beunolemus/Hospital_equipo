@@ -1,14 +1,24 @@
 const { Router } = require('express');
 const router = Router();
-
 const faker = require('faker');
 
 
 const Historial_Cirugias = require('../models/historial_cirugias');
+const Cirugias_por_ano = require('../models/cirugias_por_ano');
+
+
+// Función para generar una fecha aleatoria dentro de un rango específico
+function getRandomDate(startDate, endDate) {
+    return new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
+}
  
 router.get('/create',async(req, res) => {
+    const startDate = new Date('2002-01-01'); // Fecha inicial del rango
+    const endDate = new Date('2024-12-31');   // Fecha final del rango
 
     for(let i = 0; i < 500; i++) {
+        const randomDate = getRandomDate(startDate, endDate);
+
         await Historial_Cirugias.create({
         Paciente: faker.name.findName(),
         Nombre_Medico: faker.name.findName(),
@@ -52,7 +62,7 @@ router.get('/create',async(req, res) => {
         'Requerimiento de transfusión de sangre debido a pérdida durante la cirugía',
         'Recuperación de la función motora adecuada en extremidades afectadas'
         ]),
-        date: faker.date.past(),
+        date: randomDate,
         });
     }
     res.json({message: 'Se han realizado 500 inserciones'});
@@ -61,6 +71,11 @@ router.get('/create',async(req, res) => {
 router.get('/historial_cirugias', async (req, res) => {
     const historial_cirugias = await Historial_Cirugias.find();
     res.json({historial_cirugias});
+});
+
+router.get('/cirugias_por_ano', async (req, res) => {
+    const cirugias_por_ano = await Cirugias_por_ano.find();
+    res.json({cirugias_por_ano});
 });
 
 
