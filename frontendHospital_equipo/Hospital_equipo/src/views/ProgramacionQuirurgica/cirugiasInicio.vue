@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1>Cirugias</h1>
-
-    <div v-if="message" style="margin-top: 10px;">
-      {{ message }}
+    <h1>Tabla de Cirugías</h1>
+    <div style="margin-bottom: 10px;">
+      <button @click="programacionquirurgica">Crear Cirugía</button>
     </div>
     <table>
       <thead>
@@ -19,122 +18,71 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(cirugias, index) in paginatedCirugias" :key="index">
-          <td>{{ cirugias.id_cirugia }}</td>
-          <td>{{ cirugias.Persona_id }}</td>
-          <td>{{ cirugias.medico_id }}</td>
-          <td>{{ cirugias.departamento_id }}</td>
-          <td>{{ cirugias.tipo }}</td>
-          <td>{{ cirugias.fecha }}</td>
-          <td>{{ cirugias.descripcion }}</td>
+        <tr v-for="cirugia in cirugias" :key="cirugia.id_cirugia">
+          <td>{{ cirugia.id_cirugia }}</td>
+          <td>{{ cirugia.Persona_id }}</td>
+          <td>{{ cirugia.medico_id }}</td>
+          <td>{{ cirugia.departamento_id }}</td>
+          <td>{{ cirugia.tipo }}</td>
+          <td>{{ cirugia.fecha }}</td>
+          <td>{{ cirugia.descripcion }}</td>
           <td>
-            <button @click="eliminarCirugia(cirugias.id_cirugia)">
+            <button @click="eliminarCirugia(cirugia.id_cirugia)">
               <i class="fas fa-trash-alt"></i> Eliminar
             </button>
-            &nbsp;&nbsp;&nbsp;
-
-            <button style="margin-top: 5px;">
-              <router-link :to="{ name: 'editar', params: { id: cirugias.id_cirugia }}" class="router-link-custom">
-                <i class="fas fa-edit"></i> Editar
-              </router-link>
-              
+            <button @click="editarCirugia(cirugia.id_cirugia)">
+              <i class="fas fa-edit"></i> Editar
             </button>
           </td>
         </tr>
       </tbody>
     </table>
-
-    <div style="margin-top: 10px;">
-      <button @click="paginar('anterior')" :disabled="paginaActual === 1"
-        style="background-color: black;">Anterior</button>&nbsp;
-      <button @click="paginar('siguiente')" :disabled="paginaActual * itemsPorPagina >= cirugias.length"
-        style="background-color: black;">Siguiente</button>
-    </div>
-
-    <!-- Mostrar el número de página actual y el número total de páginas -->
-    <div style="margin-top: 10px;">
-      Página {{ paginaActual }} de {{ totalPages }}
-    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
-      cirugias: [], // Inicialmente la lista de cirugias estará vacía
-      paginatedCirugias: [], // Lista de cirugias a mostrar en la página actual
-      message: '',
-      paginaActual: 1,
-      itemsPorPagina: 10, // Página actual
+      cirugias: [],
     };
   },
-  computed: {
-    totalPages() {
-      return Math.ceil(this.totalCirugias.length / this.itemsPorPagina);
-    },
-    totalCirugias() {
-      return this.cirugias;
-    },
-  },
   mounted() {
-    // Cuando el componente se monta, cargar la lista de cirugias desde la API
-    this.obtenerCirugias();
+    // Hacer la solicitud a la API y obtener los datos de cirugías
+    fetch('http://127.0.0.1:8000/hospital/api/v1cirugias/')
+      .then(response => response.json())
+      .then(data => {
+        this.cirugias = data; // Asignar los datos a la variable cirugias
+      })
+      .catch(error => console.error('Error al obtener los datos:', error));
   },
   methods: {
-    obtenerCirugias() {
-      fetch('http://localhost:8000/hospital/api/v1cirugias/') // url de la vista de la api
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Hubo un problema al obtener la lista de cirugias.');
-          }
-          return response.json();
-        })
-        .then(data => {
-          // Asignar la lista de cirugias obtenida desde la API a la variable cirugias
-          this.cirugias = data;
-          // Llamar a la función para mostrar los primeros 10 datos
-          this.mostrarDatosPaginados();
-        })
-        .catch(error => {
-          this.message = "Error: " + error.message;
-        });
-    },
     eliminarCirugia(id) {
-      fetch(`http://localhost:8000/hospital/api/v1cirugias/${id}/`, { // Corregir la URL del endpoint
+      fetch(`http://127.0.0.1:8000/hospital/api/v1cirugias/${id}/`, {
         method: 'DELETE'
       })
         .then(response => {
           if (!response.ok) {
-            throw new Error('Hubo un problema al eliminar la cirugia.');
+            throw new Error('Hubo un problema al eliminar la cirugía.');
           }
-          this.message = "¡Cirugia eliminada exitosamente!";
-          // Eliminar la cirugia de la lista después de eliminarla en el backend
-          this.cirugias = this.cirugias.filter(cirugias => cirugias.id_cirugia !== id);
-          // Actualizar los datos paginados después de eliminar una cirugia
-          this.mostrarDatosPaginados();
+          // Si la eliminación es exitosa, actualizar la lista de cirugías
+          this.obtenerCirugias();
         })
-        .catch(error => {
-          this.message = "Error: " + error.message;
-        });
-
+        .catch(error => console.error('Error al eliminar la cirugía:', error));
+      console.log("Eliminar cirugía con ID:", id);
     },
-    mostrarDatosPaginados() {
-      const inicio = (this.paginaActual - 1) * this.itemsPorPagina;
-      const fin = this.paginaActual * this.itemsPorPagina;
-      this.paginatedCirugias = this.cirugias.slice(inicio, fin);
+    editarCirugia(id) {
+      // Aquí debes implementar la lógica para editar la cirugía con el ID proporcionado
+      console.log("Editar cirugía con ID:", id);
     },
-    paginar(direccion) {
-      if (direccion === 'anterior') {
-        this.paginaActual--;
-      } else {
-        this.paginaActual++;
-      }
-      // Llamar a la función para mostrar los datos de la página actual
-      this.mostrarDatosPaginados();
+    crearCirugia() {
+      
+      // Aquí debes implementar la lógica para crear una nueva cirugía
+      console.log("Crear nueva cirugía");
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -145,10 +93,10 @@ export default {
 <style>
 /* Estilos para la tabla */
 table {
-  width: 30%;
+  width: 80%;
   border-collapse: collapse;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .router-link-custom {
@@ -158,31 +106,32 @@ table {
 
 th,
 td {
-  border: 1px solid #981111;
+  border: 1px solid #920d0d;
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #a1deee;
+  background-color: #f2f2f2;
 }
 
 /* Estilos para los botones */
 button {
-  background-color: #bcbcee;
-  color: rgb(244, 241, 241);
+  background-color: #239a9e;
+  color: white;
   border: none;
   padding: 8px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 6px;
   cursor: pointer;
   border-radius: 4px;
+  margin-right: 5px;
 }
 
 button:hover {
-  background-color: #14a6ca;
+  background-color: #14901a;
 }
 
 /* Estilos para el ícono */
