@@ -13,7 +13,7 @@ function getRandomDate(startDate, endDate) {
 }
  
 router.get('/create',async(req, res) => {
-    const startDate = new Date('2002-01-01'); // Fecha inicial del rango
+    const startDate = new Date('2022-01-01'); // Fecha inicial del rango
     const endDate = new Date('2024-12-31');   // Fecha final del rango
 
     for(let i = 0; i < 500; i++) {
